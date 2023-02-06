@@ -1,8 +1,5 @@
 @FunctionalInterface
-public interface MyInterface {
-    void say();
+public interface MyInterface<E> {
+    void say(E у);
 
-    default void sayHello() {
-        System.out.println("Hello World");
-    }
 }
